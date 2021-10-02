@@ -3,7 +3,23 @@ import java.io.*;
 
 class seperate{
 	 void fun(int A[], int len){
-		// Logic
+		int count=0;
+		for(int i = 0; i<len;i++)
+		{
+			if(A[i]==0)
+			{
+				count++;
+			}
+		}
+		for (int i=0;i<count;i++)
+		{
+			A[i]=0;
+		}
+		for (int i=count;i<len;i++)
+		{
+			A[i]=1;
+		}
+		//return ;
 	}
 }
 public class geminicode{
